@@ -1,0 +1,16 @@
+.acf-field-object-accordion {
+    background: #f0f0f0;
+}
+
+.acf-field-object-accordion .li-field-name {
+    text-indent: -9999px;
+}
+
+.acf-field-object-accordion tr[data-name="name"],
+.acf-field-object-accordion tr[data-name="required"],
+.acf-field-object-accordion tr[data-name="instructions"],
+.acf-field-object-accordion tr[data-name="wrapper"]
+{
+    display: none;
+}
+

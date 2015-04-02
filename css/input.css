@@ -1,0 +1,41 @@
+.acf-field-accordion .dashicons-before{
+    color: red;
+    line-height: 20px;
+    font-weight: bold;
+    text-indent: -20px;
+    margin-left: 32px;
+}
+
+.acf-field-accordion .dashicons-before span{
+    color: #000000;
+}
+
+.acf-field-accordion {
+    cursor: pointer;
+    position: relative;
+}
+
+.acf-field-accordion .acf-label {
+    display: none;
+}
+
+.acf-field-accordion:hover,
+.acf-field-accordion.active {
+    background: #ebebeb
+}
+
+.acf-field-accordion:hover:before,
+.acf-field-accordion.active:before {
+    content: "+";
+    color: #ccc;
+    position: absolute;
+    right: 29px;
+    font-size: 41px;
+    font-weight: bold;
+    top: 34px;
+}
+
+.acf-field-accordion.active:before {
+    content: "-";
+    top: 31px;
+}
