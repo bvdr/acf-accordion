@@ -80,6 +80,25 @@
 				initialize_field( $(this) );
 				
 			});
+
+            //<![CDATA[
+            (function ($) {
+                jQuery(".acf-tab-button").click(function () {
+                    jQuery(".field_type-accordion").removeClass('active')
+                    jQuery(".field_type-accordion").nextUntil(".field_type-tab, .field_type-accordion, script").css("display", "none");
+                });
+                jQuery(".field_type-accordion").nextUntil(".field_type-tab, .field_type-accordion, script, div[style='display:none']").css("display", "none");
+                jQuery(".field_type-accordion").click(function () {
+                    jQuery(".field_type-accordion").nextUntil(".field_type-tab, .field_type-accordion, script").css("display", "none");
+                    if ($(this).hasClass("active")) {
+                        jQuery(this).removeClass('active')
+                    } else {
+                        jQuery('.field_type-accordion').removeClass('active')
+                        jQuery(this).addClass('active').nextUntil(".field_type-tab, .field_type-accordion, script").css("display", "block");
+                    }
+                });
+            })(jQuery);
+            //]]>
 		
 		});
 	

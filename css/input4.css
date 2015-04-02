@@ -1,4 +1,4 @@
-.acf-field-accordion .dashicons-before{
+.field_type-accordion .dashicons-before{
     color: red;
     line-height: 20px;
     font-weight: bold;
@@ -6,26 +6,26 @@
     margin-left: 32px;
 }
 
-.acf-field-accordion .dashicons-before span{
+.field_type-accordion .dashicons-before span{
     color: #000000;
 }
 
-.acf-field-accordion {
+.field_type-accordion {
     cursor: pointer;
     position: relative;
 }
 
-.acf-field-accordion .acf-label {
-    display: none;
+.field_type-accordion .label {
+    display: none !important;
 }
 
-.acf-field-accordion:hover,
-.acf-field-accordion.active {
+.field_type-accordion:hover,
+.field_type-accordion.active {
     background: #ebebeb
 }
 
-.acf-field-accordion:hover:before,
-.acf-field-accordion.active:before {
+.field_type-accordion:hover:before,
+.field_type-accordion.active:before {
     content: "+";
     color: #ccc;
     position: absolute;
@@ -35,7 +35,7 @@
     top: 34px;
 }
 
-.acf-field-accordion.active:before {
+.field_type-accordion.active:before {
     content: "-";
     top: 31px;
 }

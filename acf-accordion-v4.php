@@ -140,7 +140,7 @@ class acf_field_accordion extends acf_field {
 		
 		// register ACF scripts
 		wp_register_script( 'acf-input-accordion', $this->settings['dir'] . 'js/input.js', array('acf-input'), $this->settings['version'] );
-		wp_register_style( 'acf-input-accordion', $this->settings['dir'] . 'css/input.css', array('acf-input'), $this->settings['version'] );
+		wp_register_style( 'acf-input-accordion', $this->settings['dir'] . 'css/input4.css', array('acf-input'), $this->settings['version'] );
 		
 		
 		// scripts
