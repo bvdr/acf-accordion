@@ -1,6 +1,6 @@
 # ACF Accordion
 
-Welcome to the ACF Accordion field type repository.
+![acf-accordion](https://cloud.githubusercontent.com/assets/4183317/6965273/eaa12e6e-d958-11e4-854f-f877f6b639a2.gif)
 
 -----------------------
 
