@@ -28,5 +28,9 @@ This ACF field type is compatible with:
 
 == Changelog ==
 
+= 1.0.1 =
+* [Add] support for V4;
+* [Add] 'acf/accordion/dir' filter to allow the plugin to be integrated in themes;
+
 = 1.0.0 =
-* Initial Release.
+* It works!

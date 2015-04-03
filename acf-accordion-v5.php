@@ -158,7 +158,7 @@ class acf_field_accordion extends acf_field {
 	function input_admin_enqueue_scripts() {
 		
 		$dir = plugin_dir_url( __FILE__ );
-		
+		$dir = apply_filters( "acf/accordion/dir", $dir );
 		
 		// register & include JS
 		wp_register_script( 'acf-input-accordion', "{$dir}js/input.js" );
@@ -271,7 +271,7 @@ class acf_field_accordion extends acf_field {
 	function field_group_admin_enqueue_scripts() {
 
 		$dir = plugin_dir_url( __FILE__ );
-
+		$dir = apply_filters( "acf/accordion/dir", $dir );
 
 		// register & include JS
 		wp_register_script( 'acf-admin-accordion', "{$dir}js/accordion-admin.js" );

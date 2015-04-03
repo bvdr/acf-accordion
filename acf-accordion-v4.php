@@ -78,11 +78,12 @@ class acf_field_accordion extends acf_field {
 		<?php
 		
 		do_action('acf/create_field', array(
-			'type'		=>	'text',
-			'name'		=>	'fields['.$key.'][icon_class]',
-			'value'		=>	$field['icon_class'],
-			'layout'	=>	'horizontal',
+			'type'  => 'textarea',
+			'name'  => 'fields[' . $key . '][icon_class]',
+			'value' => $field['icon_class'],
 		));
+
+
 		
 		?>
 	</td>
@@ -136,11 +137,14 @@ class acf_field_accordion extends acf_field {
 	function input_admin_enqueue_scripts()
 	{
 		// Note: This function can be removed if not used
-		
-		
+
+		$dir = $this->settings['dir'];
+		$dir = apply_filters( "acf/accordion/dir", $dir );
+
+
 		// register ACF scripts
-		wp_register_script( 'acf-input-accordion', $this->settings['dir'] . 'js/input.js', array('acf-input'), $this->settings['version'] );
-		wp_register_style( 'acf-input-accordion', $this->settings['dir'] . 'css/input.css', array('acf-input'), $this->settings['version'] );
+		wp_register_script( 'acf-input-accordion', $dir . 'js/input.js', array('acf-input'), $this->settings['version'] );
+		wp_register_style( 'acf-input-accordion', $dir . 'css/input.css', array('acf-input'), $this->settings['version'] );
 		
 		
 		// scripts

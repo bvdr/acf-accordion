@@ -27,5 +27,19 @@ This ACF field type is compatible with:
 3. Create a new field via ACF and select the Accordion Tab type
 4. Please refer to the description for more info regarding the field type settings
 
+### Include in theme
+
+ACF Accordion can be included in the theme by using the `acf/accordion/dir` filter. Here is an example
+```php
+include_once( 'includes/acf-accordion/acf-accordion.php' );
+
+add_filter( 'acf/accordion/dir', 'acf_accordion_dir' );
+function acf_accordion_dir( $dir ) {
+    $dir = get_template_directory_uri() . '/includes/acf-accordion/';
+
+    return $dir;
+}
+```
+
 ### Changelog
 Please see `readme.txt` for changelog
