@@ -1,12 +1,10 @@
 <?php
 
 class acf_field_accordion extends acf_field {
-	
 	// vars
 	var $settings, // will hold info such as dir / path
 		$defaults; // will hold default field options
-		
-		
+
 	/*
 	*  __construct
 	*
@@ -23,15 +21,10 @@ class acf_field_accordion extends acf_field {
 		$this->label = __('Accordion Tab');
 		$this->category = __("Layout",'acf'); // Basic, Content, Choice, etc
 		$this->defaults = array(
-			// add default here to merge into your field. 
-			// This makes life easy when creating the field options as you don't need to use any if( isset('') ) logic. eg:
-			//'preview_size' => 'thumbnail'
+			'icon_class' => 'dashicons-arrow-right'
 		);
-		
-		
-		// do not delete!
+
     	parent::__construct();
-    	
     	
     	// settings
 		$this->settings = array(
@@ -58,14 +51,7 @@ class acf_field_accordion extends acf_field {
 	
 	function create_options( $field )
 	{
-		// defaults?
-		/*
-		$field = array_merge($this->defaults, $field);
-		*/
-		
-		// key is needed in the field names to correctly save the data
 		$key = $field['name'];
-		
 		
 		// Create Field Options HTML
 		?>
@@ -83,8 +69,6 @@ class acf_field_accordion extends acf_field {
 			'value' => $field['icon_class'],
 		));
 
-
-		
 		?>
 	</td>
 </tr>
@@ -107,14 +91,6 @@ class acf_field_accordion extends acf_field {
 	
 	function create_field( $field )
 	{
-		// defaults?
-		/*
-		$field = array_merge($this->defaults, $field);
-		*/
-		
-		// perhaps use $field['preview_size'] to alter the markup?
-		
-		
 		// create Field HTML
 		?>
 			<h2 class="dashicons-before <?php echo esc_attr( $field['icon_class'] ) ?>"><span><?php echo esc_attr( $field['label'] ) ?></span></h2>
@@ -160,25 +136,6 @@ class acf_field_accordion extends acf_field {
 		
 	}
 	
-	
-	/*
-	*  input_admin_head()
-	*
-	*  This action is called in the admin_head action on the edit screen where your field is created.
-	*  Use this action to add CSS and JavaScript to assist your create_field() action.
-	*
-	*  @info	http://codex.wordpress.org/Plugin_API/Action_Reference/admin_head
-	*  @type	action
-	*  @since	3.6
-	*  @date	23/01/13
-	*/
-
-	function input_admin_head()
-	{
-		// Note: This function can be removed if not used
-	}
-	
-	
 	/*
 	*  field_group_admin_enqueue_scripts()
 	*
@@ -206,24 +163,6 @@ class acf_field_accordion extends acf_field {
 	}
 
 	
-	/*
-	*  field_group_admin_head()
-	*
-	*  This action is called in the admin_head action on the edit screen where your field is edited.
-	*  Use this action to add CSS and JavaScript to assist your create_field_options() action.
-	*
-	*  @info	http://codex.wordpress.org/Plugin_API/Action_Reference/admin_head
-	*  @type	action
-	*  @since	3.6
-	*  @date	23/01/13
-	*/
-
-	function field_group_admin_head()
-	{
-		// Note: This function can be removed if not used
-	}
-
-
 	/*
 	*  load_value()
 	*
