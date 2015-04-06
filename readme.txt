@@ -1,7 +1,7 @@
 === Advanced Custom Fields: Accordion Tab Field ===
 Contributors: Bogdan Dragomir
+Donate link: goo.gl/1w6rU0
 Tags: acf, accordion, advanced custom fields, tabs, options
-Donate link:goo.gl/1w6rU0
 Requires at least: 3.5
 Tested up to: 3.8.1
 Stable tag: trunk
@@ -26,6 +26,10 @@ This ACF field type is compatible with:
 2. Activate the Accordion Tab plugin via the plugins admin page
 3. Create a new field via ACF and select the Accordion Tab type
 4. Please refer to the description for more info regarding the field type settings
+
+== Screenshots ==
+
+1. This is an example of how the accordion works in an option menu created with ACF
 
 == Changelog ==
 
