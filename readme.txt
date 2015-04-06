@@ -1,6 +1,7 @@
 === Advanced Custom Fields: Accordion Tab Field ===
 Contributors: Bogdan Dragomir
 Tags: acf, accordion, advanced custom fields, tabs, options
+Donate link:goo.gl/1w6rU0
 Requires at least: 3.5
 Tested up to: 3.8.1
 Stable tag: trunk
