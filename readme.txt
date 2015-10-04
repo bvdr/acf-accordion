@@ -1,9 +1,9 @@
 === Advanced Custom Fields: Accordion Tab Field ===
-Contributors: Bogdan Dragomir
+Contributors: bogdand, tmconnect
 Donate link: goo.gl/1w6rU0
 Tags: acf, accordion, advanced custom fields, tabs, options
 Requires at least: 3.5
-Tested up to: 3.8.1
+Tested up to: 4.3.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,6 +17,8 @@ The ACF Accordion provides an easy way to organize big forms by grouping the fie
 = Compatibility =
 
 This ACF field type is compatible with:
+
+* ACF PRO
 * ACF 5
 * ACF 4
 
@@ -32,6 +34,18 @@ This ACF field type is compatible with:
 1. This is an example of how the accordion works in an option menu created with ACF
 
 == Changelog ==
+
+= 1.1.0 =
+* [Fix] styling in ACF5 free version;
+* [Fix] gallery crashing in accordion tab;
+* [Fix] google map crashing in accordion tab;
+* [Fix] repeater field crashing in accordion tab;
+* [Add] support for ACF-Column-Field, contribution by Thomas Meyer;
+* [Add] add icon picker in admin section, contribution by Thomas Meyer;
+* [Add] refactored the accordion script, contribution by Thomas Meyer;
+
+= 1.0.2 =
+* [Fix] Tabs after accordion not showing in latest version of ACF;
 
 = 1.0.1 =
 * [Add] support for V4;

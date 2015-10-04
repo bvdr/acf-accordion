@@ -17,6 +17,8 @@ The ACF Accordion provides an easy way to organize big forms by grouping the fie
 ### Compatibility
 
 This ACF field type is compatible with:
+
+* ACF PRO
 * ACF 5
 * ACF 4
 

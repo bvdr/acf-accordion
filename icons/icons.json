@@ -1,0 +1,1348 @@
+{
+	"icons": [
+		{
+			"icon": {
+				"class": "dashicons-menu",
+				"name": "Global Menu "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-dashboard",
+				"name": "Global Dashboard "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-undo",
+				"name": "Global Undo "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-redo",
+				"name": "Global Redo "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-lock",
+				"name": "Global Lock "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-calendar",
+				"name": "Global Calendar "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-visibility",
+				"name": "Global Visibility "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-edit",
+				"name": "Global Edit "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-trash",
+				"name": "Global Trash "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-external",
+				"name": "Global External "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-leftright",
+				"name": "Global Leftright "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-sort",
+				"name": "Global Sort "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-randomize",
+				"name": "Global Randomize "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-hammer",
+				"name": "Global Hammer "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-art",
+				"name": "Global Art "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-migrate",
+				"name": "Global Migrate "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-performance",
+				"name": "Global Performance "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-tickets",
+				"name": "Global Tickets "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-nametag",
+				"name": "Global Nametag "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-clipboard",
+				"name": "Global Clipboard "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-heart",
+				"name": "Global Heart "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-megaphone",
+				"name": "Global Megaphone "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-schedule",
+				"name": "Global Schedule "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-wordpress",
+				"name": "Global Wordpress "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-pressthis",
+				"name": "Global Pressthis "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-update",
+				"name": "Global Update "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-screenoptions",
+				"name": "Global Screenoptions "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-info",
+				"name": "Global Info "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-cart",
+				"name": "Global Cart "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-feedback",
+				"name": "Global Feedback "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-cloud",
+				"name": "Global Cloud "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-translation",
+				"name": "Global Translation "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-tag",
+				"name": "Global Tag "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-category",
+				"name": "Global Category "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-archive",
+				"name": "Global Archive "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-tagcloud",
+				"name": "Global Tagcloud "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-text",
+				"name": "Global Text "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-yes",
+				"name": "Global Yes "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-no",
+				"name": "Global No "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-plus",
+				"name": "Global Plus "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-minus",
+				"name": "Global Minus "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-dismiss",
+				"name": "Global Dismiss "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-marker",
+				"name": "Global Marker "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-flag",
+				"name": "Global Flag "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-share1",
+				"name": "Global Share1 "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-share",
+				"name": "Global Share "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-twitter",
+				"name": "Global Twitter "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-rss",
+				"name": "Global Rss "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-email",
+				"name": "Global Email "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-facebook",
+				"name": "Global Facebook "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-networking",
+				"name": "Global Networking "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-googleplus",
+				"name": "Global Googleplus "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-location",
+				"name": "Global Location "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-camera",
+				"name": "Global Camera "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-vault",
+				"name": "Global Vault "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-shield",
+				"name": "Global Shield "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-sos",
+				"name": "Global Sos "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-search",
+				"name": "Global Search "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-slides",
+				"name": "Global Slides "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-analytics",
+				"name": "Global Analytics "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-groups",
+				"name": "Global Groups "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-businessman",
+				"name": "Global Businessman "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-id",
+				"name": "Global Id "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-products",
+				"name": "Global Products "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-awards",
+				"name": "Global Awards "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-forms",
+				"name": "Global Forms "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-testimonial",
+				"name": "Global Testimonial "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-portfolio",
+				"name": "Global Portfolio "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-book",
+				"name": "Global Book "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-download",
+				"name": "Global Download "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-upload",
+				"name": "Global Upload "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-backup",
+				"name": "Global Backup "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-clock",
+				"name": "Global Clock "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-lightbulb",
+				"name": "Global Lightbulb "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-microphone",
+				"name": "Global Microphone "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-desktop",
+				"name": "Global Desktop "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-tablet",
+				"name": "Global Tablet "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-smartphone",
+				"name": "Global Smartphone "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-phone",
+				"name": "Global Phone "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-smiley",
+				"name": "Global Smiley "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-carrot",
+				"name": "Global Carrot "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-building",
+				"name": "Global Building "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-store",
+				"name": "Global Store "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-album",
+				"name": "Global Album "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-palmtree",
+				"name": "Global Palmtree "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-money",
+				"name": "Global Money "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-site",
+				"name": "Admin Site "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-media",
+				"name": "Admin Media "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-page",
+				"name": "Admin Page "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-comments",
+				"name": "Admin Comments "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-appearance",
+				"name": "Admin Appearance "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-plugins",
+				"name": "Admin Plugins "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-users",
+				"name": "Admin Users "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-tools",
+				"name": "Admin Tools "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-settings",
+				"name": "Admin Settings "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-network",
+				"name": "Admin Network "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-generic",
+				"name": "Admin Generic "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-home",
+				"name": "Admin Home "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-collapse",
+				"name": "Admin Collapse "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-links",
+				"name": "Admin Links "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-admin-post",
+				"name": "Admin Post "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-align-left",
+				"name": "Align Left "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-align-right",
+				"name": "Align Right "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-align-center",
+				"name": "Align Center "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-align-none",
+				"name": "Align None "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-up",
+				"name": "Arrow Up "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-down",
+				"name": "Arrow Down "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-left",
+				"name": "Arrow Left "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-right",
+				"name": "Arrow Right "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-up-alt",
+				"name": "Arrow Up 1"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-down-alt",
+				"name": "Arrow Down 1"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-left-alt",
+				"name": "Arrow Left 1"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-right-alt",
+				"name": "Arrow Right 1"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-up-alt2",
+				"name": "Arrow Up 2"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-down-alt2",
+				"name": "Arrow Down 2"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-left-alt2",
+				"name": "Arrow Left 2"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-arrow-right-alt2",
+				"name": "Arrow Right 2"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-book-alt",
+				"name": "Book Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-calendar-alt",
+				"name": "Calendar Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-chart-pie",
+				"name": "Chart Pie "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-chart-bar",
+				"name": "Chart Bar "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-chart-line",
+				"name": "Chart Line "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-chart-area",
+				"name": "Chart Area "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-play",
+				"name": "Controls Play "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-pause",
+				"name": "Controls Pause "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-forward",
+				"name": "Controls Forward "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-skipforward",
+				"name": "Controls Skipforward "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-back",
+				"name": "Controls Back "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-skipback",
+				"name": "Controls Skipback "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-repeat",
+				"name": "Controls Repeat "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-volumeon",
+				"name": "Controls Volumeon "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-controls-volumeoff",
+				"name": "Controls Volumeoff "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-bold",
+				"name": "Editor Bold "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-italic",
+				"name": "Editor Italic "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-ul",
+				"name": "Editor Ul "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-ol",
+				"name": "Editor Ol "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-quote",
+				"name": "Editor Quote "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-alignleft",
+				"name": "Editor Alignleft "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-aligncenter",
+				"name": "Editor Aligncenter "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-alignright",
+				"name": "Editor Alignright "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-insertmore",
+				"name": "Editor Insertmore "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-spellcheck",
+				"name": "Editor Spellcheck "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-distractionfree",
+				"name": "Editor Distractionfree "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-expand",
+				"name": "Editor Expand "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-contract",
+				"name": "Editor Contract "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-kitchensink",
+				"name": "Editor Kitchensink "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-underline",
+				"name": "Editor Underline "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-justify",
+				"name": "Editor Justify "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-textcolor",
+				"name": "Editor Textcolor "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-paste-word",
+				"name": "Editor Paste Word"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-paste-text",
+				"name": "Editor Paste Text"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-removeformatting",
+				"name": "Editor Remove Format"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-video",
+				"name": "Editor Video "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-customchar",
+				"name": "Editor Customchar "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-outdent",
+				"name": "Editor Outdent "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-indent",
+				"name": "Editor Indent "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-help",
+				"name": "Editor Help "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-strikethrough",
+				"name": "Editor Strikethrough "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-unlink",
+				"name": "Editor Unlink "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-rtl",
+				"name": "Editor Rtl "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-break",
+				"name": "Editor Break "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-code",
+				"name": "Editor Code "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-editor-paragraph",
+				"name": "Editor Paragraph "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-email-alt",
+				"name": "Email Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-excerpt-view",
+				"name": "Excerpt View "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-exerpt-view",
+				"name": "Exerpt View "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-facebook-alt",
+				"name": "Facebook Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-links",
+				"name": "Format Links "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-standard",
+				"name": "Format Standard "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-image",
+				"name": "Format Image "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-gallery",
+				"name": "Format Gallery "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-audio",
+				"name": "Format Audio "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-video",
+				"name": "Format Video "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-chat",
+				"name": "Format Chat "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-status",
+				"name": "Format Status "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-aside",
+				"name": "Format Aside "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-format-quote",
+				"name": "Format Quote "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-grid-view",
+				"name": "Grid View "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-id-alt",
+				"name": "Id Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-image-crop",
+				"name": "Image Crop "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-image-rotate-left",
+				"name": "Image Rotate Left"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-image-rotate-right",
+				"name": "Image Rotate Right"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-image-flip-vertical",
+				"name": "Image Flip Vertical"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-image-flip-horizontal",
+				"name": "Image Flip Horizontal"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-images-alt",
+				"name": "Images Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-images-alt2",
+				"name": "Images Alt2 "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-index-card",
+				"name": "Index Card "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-list-view",
+				"name": "List View "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-location-alt",
+				"name": "Location Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-archive",
+				"name": "Media Archive "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-audio",
+				"name": "Media Audio "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-code",
+				"name": "Media Code "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-default",
+				"name": "Media Default "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-document",
+				"name": "Media Document "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-interactive",
+				"name": "Media Interactive "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-spreadsheet",
+				"name": "Media Spreadsheet "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-text",
+				"name": "Media Text "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-media-video",
+				"name": "Media Video "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-no-alt",
+				"name": "No Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-playlist-audio",
+				"name": "Playlist Audio "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-playlist-video",
+				"name": "Playlist Video "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-plus-alt",
+				"name": "Plus Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-post-status",
+				"name": "Post Status "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-post-trash",
+				"name": "Post Trash "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-share-alt",
+				"name": "Share Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-share-alt2",
+				"name": "Share Alt2 "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-shield-alt",
+				"name": "Shield Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-star-filled",
+				"name": "Star Filled "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-star-half",
+				"name": "Star Half "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-star-empty",
+				"name": "Star Empty "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-tickets-alt",
+				"name": "Tickets Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-universal-access",
+				"name": "Universal Access 1"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-universal-access-alt",
+				"name": "Universal Access 2"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-video-alt",
+				"name": "Video Alt "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-video-alt2",
+				"name": "Video Alt2 "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-video-alt3",
+				"name": "Video Alt3 "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-welcome-edit-page",
+				"name": "Welcome Edit Page"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-welcome-write-blog",
+				"name": "Welcome Write Blog"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-welcome-add-page",
+				"name": "Welcome Add Page"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-welcome-view-site",
+				"name": "Welcome View Site"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-welcome-widgets-menus",
+				"name": "Welcome Widgets Menus"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-welcome-comments",
+				"name": "Welcome Comments "
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-welcome-learn-more",
+				"name": "Welcome Learn More"
+			}
+		},
+		{
+			"icon": {
+				"class": "dashicons-wordpress-alt",
+				"name": "Wordpress Alt "
+			}
+		}
+	]
+}

@@ -1,41 +1,108 @@
-.acf-field-accordion .dashicons-before{
-    color: red;
-    line-height: 20px;
-    font-weight: bold;
-    text-indent: -20px;
-    margin-left: 32px;
-}
+/* @override 
+	http://dhz-base/wp-content/plugins/acf-accordion/css/input.css?ver=4.2-beta4-32072
+	http://acf4.dev/wp-content/plugins/acf-accordion/css/input.css?ver=1.0.0 */
 
-.acf-field-accordion .dashicons-before span{
-    color: #000000;
-}
-
-.acf-field-accordion {
+.acf-fields > .acf-field.acf-field-accordion,
+#acf_4.postbox .field_type-accordion {
     cursor: pointer;
     position: relative;
+    padding: 8px 0;
 }
 
-.acf-field-accordion .acf-label {
+.acf-field-accordion h2 span.dashicons-before:before,
+.field_type-accordion h2 span.dashicons-before:before {
+	color: #FF0000;
+	font-size: 1.2em;
+    line-height: 1;
+    text-indent: -20px;
+    margin-left: 20px;
+	top: 5px;
+	position: relative;
+}
+
+#poststuff .acf-field-accordion h2,
+#poststuff .field_type-accordion h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: 1.3em;
+}
+
+.acf-field-accordion .acf-label,
+.field_type-accordion .label {
     display: none;
 }
 
 .acf-field-accordion:hover,
-.acf-field-accordion.active {
-    background: #ebebeb
+.acf-field-accordion.active,
+.acf-field-accordion.opened,
+.field_type-accordion:hover,
+.field_type-accordion.active,
+.field_type-accordion.opened  {
+    background: #f1f1f1;
 }
 
 .acf-field-accordion:hover:before,
-.acf-field-accordion.active:before {
-    content: "+";
-    color: #ccc;
-    position: absolute;
-    right: 29px;
-    font-size: 41px;
-    font-weight: bold;
-    top: 34px;
+.acf-field-accordion.opened:before,
+.field_type-accordion:hover:before,
+.field_type-accordion.opened:before {
+	position: absolute;
+	font-family: dashicons;
+    content: "\f132";
+    color: #747474;
+    font-size: 20px;
+    right: 20px;
+    top: 26px;
 }
 
-.acf-field-accordion.active:before {
-    content: "-";
-    top: 31px;
+.acf-field-accordion.opened:before,
+.field_type-accordion.opened:before {
+	font-family: dashicons;
+    content: "\f335";
+    font-size: 24px;
+    right: 18px;
+    top: 24px;
+}
+
+.acf-accordion-group {
+	display: none;
+	padding: 10px 10px 0 10px;
+}
+
+.acf-accordion-group.opened {
+    display: block;
+}
+
+/* ACF 5 non pro - specific css */
+#acf_5.postbox .acf-accordion-group {
+    padding: 10px;
+}
+
+#acf_5.postbox .acf-field-accordion:hover:before,
+#acf_5.postbox .acf-field-accordion.opened:before,
+#acf_5.postbox .field_type-accordion:hover:before,
+#acf_5.postbox .field_type-accordion.opened:before {
+    top: 33px;
+}
+
+#acf_5.postbox .acf-field-accordion.opened:before,
+#acf_5.postbox .field_type-accordion.opened:before {
+    top: 30px;
+}
+
+/* ACF 4 - specific css */
+#acf_4.postbox .acf-accordion-group {
+	padding: 10px;
+}
+
+#acf_4.postbox .acf-field-accordion:hover:before,
+#acf_4.postbox .acf-field-accordion.opened:before,
+#acf_4.postbox .field_type-accordion:hover:before,
+#acf_4.postbox .field_type-accordion.opened:before {
+    top: 33px;
+}
+
+#acf_4.postbox .acf-field-accordion.opened:before,
+#acf_4.postbox .field_type-accordion.opened:before {
+    top: 30px;
 }

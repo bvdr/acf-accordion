@@ -1,6 +1,38 @@
+/* @override 
+	http://dhz-base/wp-content/plugins/acf-accordion/css/accordion-admin.css?ver=4.2-beta4-32072
+	http://dhz-base/wp-content/plugins/acf-accordion/css/accordion-admin.css?ver=4.2-beta4-32091
+	http://acf4.dev/wp-content/plugins/acf-accordion/css/accordion-admin.css?ver=4.2-beta4-32091 */
 .acf-field-object-accordion,
 .field_type-accordion{
-    background: #f0f0f0 !important;
+  background: #f0f0f0 !important;
+}
+
+.acf-field-object-accordion .select2-container,
+.field_type-accordion .select2-container {
+	width:100%
+}
+
+.acf-field-object + .acf-field-object-accordion {
+  margin-top: 6px;
+}
+
+.acf-field-object + .acf-field-object-accordion:before {
+  display: block;
+  content: "";
+  height: 1px;
+  background: #F0F0F0;
+  margin-top: -7px;
+  width: 100%;
+  position: absolute;
+}
+
+.acf-field-object + .acf-field-object-accordion.ui-sortable-placeholder {
+  margin-top: 0;
+  padding-top: 6px;
+}
+.acf-field-object-accordion.ui-sortable-helper:before,
+.ui-sortable-placeholder + .acf-field-object-accordion:before {
+  display: none;
 }
 
 .acf-field-object-accordion .li-field-name,
@@ -13,10 +45,25 @@
 .acf-field-object-accordion tr[data-name="required"],
 .acf-field-object-accordion tr[data-name="instructions"],
 .acf-field-object-accordion tr[data-name="wrapper"],
+.field_type-accordion tr.required,
 .field_type-accordion tr.field_name,
 .field_type-accordion tr.field_instructions
 {
     display: none;
 }
 
+.acf-field-object-accordion .icons-selector i,
+.field_type-accordion .icons-selector i {
+	font-family: dashicons;
+}
 
+.acf-field-object-accordion.icons-selector .fip-box .fip-icon-block::before,
+.field_type-accordion .icons-selector .fip-box .fip-icon-block::before {
+	top: -4px;
+}
+
+.acf-field-object-accordion .icons-selector .fip-icon-block::before,
+.field_type-accordion .icons-selector .fip-icon-block::before {
+	position: relative;
+	top: -3px;
+}

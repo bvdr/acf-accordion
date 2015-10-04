@@ -2,7 +2,6 @@
 
 class acf_field_accordion extends acf_field {
 	
-	
 	/*
 	*  __construct
 	*
@@ -23,17 +22,20 @@ class acf_field_accordion extends acf_field {
 		$this->category = 'layout';
 		
 		$this->defaults = array(
-			'icon_class' => 'dashicons-arrow-right',
+			'value'			=> false, // prevents acf_render_fields() from attempting to load value
+			'icon_class'	=> 'dashicons-arrow-right'
 		);
 
-		$this->l10n = array(
-			'error'	=> __('Error! Please enter a value', 'acf-accordion'),
+		// Settings
+		$this->settings = array(
+			'icons'		=>	plugin_dir_url( __FILE__ ) . 'icons/icons.json'
 		);
+
+		$this->l10n = array();
 		
     	parent::__construct();
     	
 	}
-	
 	
 	/*
 	*  render_field_settings()
@@ -60,15 +62,55 @@ class acf_field_accordion extends acf_field {
 		*  Please note that you must also have a matching $defaults value for the field name (font_size)
 		*/
 		
+		// acf_render_field_setting( $field, array(
+		// 	'label'			=> __('Icon class','acf-accordion'),
+		// 	'instructions'	=> __('You can add any icon class from the <a href="https://developer.wordpress.org/resource/dashicons/" target="_blank">Developer Resources: Dashicons</a>','acf-accordion'),
+		// 	'type'			=> 'text',
+		// 	'name'			=> 'icon_class',
+		// ));
+
+		$json_file = wp_remote_get($this->settings['icons']);
+		$json_file = wp_remote_retrieve_body( $json_file );
+		$json_content = @json_decode( $json_file, true );
+		
+		if ( !isset( $json_content['icons'] ) ){
+			_e('No icons found', 'acf-accordion');
+			return;
+		}
+
+		$icons = array();
+
+		foreach ( $json_content['icons'] as $icon ) {
+			$icons[$icon['icon']['class']] = $icon['icon']['name'];
+		}
+
 		acf_render_field_setting( $field, array(
-			'label'			=> __('Icon class','acf-accordion'),
-			'instructions'	=> __('You can add any icon class from Dashicons https://developer.wordpress.org/resource/dashicons/','acf-accordion'),
-			'type'			=> 'text',
+			'label'			=> __('Icon','acf-accordion'),
+			'type'			=> 'select',
+			'id'			=> $field['ID'] . 'accordion-select',
 			'name'			=> 'icon_class',
+			'choices'		=> $icons,
 		));
 
+		?>
+		<script>
+			(function($){				
+				var ID = '<?php echo $field['ID'] ?>';
+				jQuery("#"+ID+"accordion-select").select2({
+					formatResult: format,
+					formatSelection: format,
+				});
+				function format(o) {
+					if (!o.id) {
+						return o.text; // optgroup
+					} else {
+						return "<i class='accordion dashicons " + o.id + "' style='margin-right: 5px;'></i>" + o.text;
+					}
+				}
+			})(jQuery);
+		</script>
+		<?php
 	}
-	
 	
 	
 	/*
@@ -86,11 +128,9 @@ class acf_field_accordion extends acf_field {
 	*  @return	n/a
 	*/
 	
-	function render_field( $field ) {
-		
+	function render_field( $field ) {		
 		?>
-		<h2 class="dashicons-before <?php echo esc_attr( $field['icon_class'] ) ?>"><span><?php echo esc_attr( $field['label'] ) ?></span></h2>
-
+		<h2><span class="dashicons-before <?php echo esc_attr( $field['icon_class'] ) ?>"></span><?php echo esc_attr( $field['label'] ) ?></h2>
 		<?php
 	}
 	
@@ -108,8 +148,6 @@ class acf_field_accordion extends acf_field {
 	*  @param	n/a
 	*  @return	n/a
 	*/
-
-
 	
 	function input_admin_enqueue_scripts() {
 		
@@ -120,15 +158,11 @@ class acf_field_accordion extends acf_field {
 		wp_register_script( 'acf-input-accordion', "{$dir}js/input.js" );
 		wp_enqueue_script('acf-input-accordion');
 		
-		
 		// register & include CSS
 		wp_register_style( 'acf-input-accordion', "{$dir}css/input.css" );
 		wp_enqueue_style('acf-input-accordion');
 		
-		
 	}
-	
-
 	
 	
 	/*
@@ -145,24 +179,18 @@ class acf_field_accordion extends acf_field {
 	*  @return	n/a
 	*/
 
-
 	function field_group_admin_enqueue_scripts() {
 
 		$dir = plugin_dir_url( __FILE__ );
 		$dir = apply_filters( "acf/accordion/dir", $dir );
 
-		// register & include JS
-		wp_register_script( 'acf-admin-accordion', "{$dir}js/accordion-admin.js" );
-		wp_enqueue_script( 'acf-admin-accordion' );
-
-
 		// register & include CSS
 		wp_register_style( 'acf-admin-accordion', "{$dir}css/accordion-admin.css" );
 		wp_enqueue_style( 'acf-admin-accordion' );
+
 	}
 
 }
-
 
 // create field
 new acf_field_accordion();

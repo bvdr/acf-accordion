@@ -24,34 +24,43 @@
 		*  @return	n/a
 		*/
 		
-		acf.add_action('ready append', function( $el ){
+		acf.add_action('ready', function( $el ){
 			
 			// search $el for fields of type 'accordion'
-			acf.get_fields({ type : 'accordion'}, $el).each(function(){
+			acf.get_fields({ type : 'accordion' }, $el).each(function(){
 				
 				initialize_field( $(this) );
-				
+				$(this).nextUntil(".field_type-tab, .acf-field-accordion").wrapAll('<div class="acf-accordion-group"></div>');
+			});
+					
+			$(".acf-field-accordion").click(function () {
+				var toggler = $(this);
+				if ( toggler.hasClass("opened") ) {
+					toggler.removeClass('opened');
+					toggler.next(".acf-accordion-group").removeClass("opened");
+				} else {
+					$(".acf-field-accordion.opened").removeClass('opened');
+					toggler.addClass('opened');
+					$(".acf-accordion-group.opened").removeClass("opened");
+					toggler.next(".acf-accordion-group").addClass("opened");
+					refresh_fields_google_map();
+				}
 			});
 
-            //<![CDATA[
-            (function ($) {
-                jQuery(".acf-tab-button").click(function () {
-                    jQuery(".acf-field-accordion").removeClass('active')
-                    jQuery(".acf-field-accordion").nextUntil(".field_type-tab, .acf-field-accordion, script").css("display", "none");
-                });
-                jQuery(".acf-field-accordion").nextUntil(".field_type-tab, .acf-field-accordion, script").css("display", "none");
-                jQuery(".acf-field-accordion").click(function () {
-                    jQuery(".acf-field-accordion").nextUntil(".field_type-tab, .acf-field-accordion, script").css("display", "none");
-                    if ($(this).hasClass("active")) {
-                        jQuery(this).removeClass('active')
-                    } else {
-                        jQuery('.acf-field-accordion').removeClass('active')
-                        jQuery(this).addClass('active').nextUntil(".field_type-tab, .acf-field-accordion, script").css("display", "block");
-                    }
-                });
-            })(jQuery);
-            //]]>
-			
+			// refreshes the gravity forms map field
+			function refresh_fields_google_map(){
+
+				var googleMaps = $('.acf-field-google-map');
+
+				for (var i = 0; i < googleMaps.length; i++) {
+
+					var fieldId = $(googleMaps[i]).attr('data-key');
+
+					acf.fields.google_map.refresh(fieldId);
+
+				}
+			}
+
 		});
 		
 		
@@ -78,32 +87,38 @@
 			$(postbox).find('.field[data-field_type="accordion"]').each(function(){
 				
 				initialize_field( $(this) );
+				$(this).nextUntil(".field_type-tab, .field_type-accordion").wrapAll('<div class="acf-accordion-group"></div>');
 				
 			});
+       		
+			jQuery(".field_type-accordion").on('click', function () {
+				var toggler = $(this);
+				if ( toggler.hasClass("opened") ) {
+					toggler.removeClass('opened');
+					toggler.next(".acf-accordion-group").removeClass("opened");
+				} else {
+					$(".field_type-accordion.opened").removeClass('opened');
+					toggler.addClass('opened');
+					$(".acf-accordion-group.opened").removeClass("opened");
+					toggler.next(".acf-accordion-group").addClass("opened");
+					refresh_fields_google_map();
+				}
+			});
 
-            //<![CDATA[
-            (function ($) {
-                jQuery(".acf-tab-button").click(function () {
-                    jQuery(".field_type-accordion").removeClass('active')
-                    jQuery(".field_type-accordion").nextUntil(".field_type-tab, .field_type-accordion, script").css("display", "none");
-                });
-                jQuery(".field_type-accordion").nextUntil(".field_type-tab, .field_type-accordion, script, div[style='display:none']").css("display", "none");
-                jQuery(".field_type-accordion").click(function () {
-                    jQuery(".field_type-accordion").nextUntil(".field_type-tab, .field_type-accordion, script").css("display", "none");
-                    if ($(this).hasClass("active")) {
-                        jQuery(this).removeClass('active')
-                    } else {
-                        jQuery('.field_type-accordion').removeClass('active')
-                        jQuery(this).addClass('active').nextUntil(".field_type-tab, .field_type-accordion, script").css("display", "block");
-                    }
-                });
-            })(jQuery);
-            //]]>
+			// refreshes the gravity forms map field
+			function refresh_fields_google_map(){
+
+				var googleMaps = $('.acf-field-google-map');
+
+				for (var i = 0; i < googleMaps.length; i++) {
+
+					var fieldId = $(googleMaps[i]).attr('data-key');
+
+					acf.fields.google_map.refresh(fieldId);
+
+				}
+			}
 		
-		});
-	
-	
+		});	
 	}
-
-
 })(jQuery);
