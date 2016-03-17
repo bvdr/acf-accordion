@@ -30,7 +30,7 @@
 			acf.get_fields({ type : 'accordion' }, $el).each(function(){
 				
 				initialize_field( $(this) );
-				$(this).nextUntil(".field_type-tab, .acf-field-accordion").wrapAll('<div class="acf-accordion-group"></div>');
+				$(this).nextUntil(".acf-field-tab, .acf-field-accordion").wrapAll('<div class="acf-field acf-accordion-group"></div>');
 			});
 					
 			$(".acf-field-accordion").click(function () {
@@ -39,10 +39,10 @@
 					toggler.removeClass('opened');
 					toggler.next(".acf-accordion-group").removeClass("opened");
 				} else {
-					$(".acf-field-accordion.opened").removeClass('opened');
-					toggler.addClass('opened');
-					$(".acf-accordion-group.opened").removeClass("opened");
-					toggler.next(".acf-accordion-group").addClass("opened");
+					$(".acf-field-accordion.opened").removeClass('opened').next(".acf-accordion-group").removeClass("opened");
+					toggler.addClass('opened').next(".acf-accordion-group").addClass("opened").children('.acf-field').each(function(){
+						$(this).removeClass('hidden-by-tab');
+					});;
 					refresh_fields_google_map();
 				}
 			});
