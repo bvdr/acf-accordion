@@ -3,7 +3,7 @@ Contributors: bogdand, tmconnect
 Donate link: goo.gl/1w6rU0
 Tags: acf, accordion, advanced custom fields, tabs, options
 Requires at least: 3.5
-Tested up to: 4.3.1
+Tested up to: 4.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,6 +13,9 @@ An accordion field that lets you group multiple fields under accordion tabs. Thi
 == Description ==
 
 The ACF Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs. It works with horizontal tabs and it also supports WordPress icons.
+
+Please contribute here
+https://github.com/bvdr/acf-accordion
 
 = Compatibility =
 
@@ -29,11 +32,28 @@ This ACF field type is compatible with:
 3. Create a new field via ACF and select the Accordion Tab type
 4. Please refer to the description for more info regarding the field type settings
 
+### Including it in theme
+
+ACF Accordion can be included in the theme by using the `acf/accordion/dir` filter. Here is an example
+
+```php
+include_once( 'includes/acf-accordion/acf-accordion.php' );
+
+add_filter( 'acf/accordion/dir', 'acf_accordion_dir' );
+function acf_accordion_dir( $dir ) {
+    $dir = get_template_directory_uri() . '/includes/acf-accordion/';
+    return $dir;
+}
+```
+
 == Screenshots ==
 
 1. This is an example of how the accordion works in an option menu created with ACF
 
 == Changelog ==
+
+= 1.1.1 - April 17, 2016 =
+* [Fix] multi tabs not working with accordion, tab after accordions showing empty;
 
 = 1.1.0 =
 * [Fix] styling in ACF5 free version;

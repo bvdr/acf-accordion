@@ -4,7 +4,7 @@
 Plugin Name: ACF Accordion
 Plugin URI: http://bogdandragomir.com/acf-accordion
 Description: An accordion field that lets you group multiple fields under accordion tabs. This makes a long ACF form break down with style.
-Version: 1.1.0
+Version: 1.1.1
 Author: Bogdan Dragomir
 Author URI: http://bogdandragomir.com
 License: GPLv2 or later
