@@ -91,7 +91,7 @@
 
 			});
 
-			jQuery(".field_type-accordion").on('click', function () {
+			jQuery(".field_type-accordion").unbind('click').click(function () {
 				var toggler = $(this);
 				if ( toggler.hasClass("opened") ) {
 					toggler.removeClass('opened');
