@@ -42,7 +42,7 @@
 					$(".acf-field-accordion.opened").removeClass('opened').next(".acf-accordion-group").removeClass("opened");
 					toggler.addClass('opened').next(".acf-accordion-group").addClass("opened").children('.acf-field').each(function(){
 						$(this).removeClass('hidden-by-tab');
-					});;
+					});
 					refresh_fields_google_map();
 				}
 			});
@@ -100,7 +100,9 @@
 					$(".field_type-accordion.opened").removeClass('opened');
 					toggler.addClass('opened');
 					$(".acf-accordion-group.opened").removeClass("opened");
-					toggler.next(".acf-accordion-group").addClass("opened");
+					toggler
+						.next(".acf-accordion-group").addClass("opened")
+						.find(".acf-tab_group-hide").removeClass("acf-tab_group-hide");
 					refresh_fields_google_map();
 				}
 			});
