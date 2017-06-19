@@ -101,8 +101,7 @@
 					toggler.addClass('opened');
 					$(".acf-accordion-group.opened").removeClass("opened");
 					toggler
-						.next(".acf-accordion-group").addClass("opened")
-						.find(".acf-tab_group-hide").removeClass("acf-tab_group-hide");
+						.next(".acf-accordion-group").addClass("opened");
 					refresh_fields_google_map();
 				}
 			});
